@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\yvang\OneDrive\Documents\TP Java\GitHub\TP1_java\gaulois\.metadata\.plugins\org.eclipse.jdt.core
+2127023368.index
+2489895941.index
+1865797976.index
