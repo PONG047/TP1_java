@@ -1,0 +1,47 @@
+package personnages;
+
+import java.util.Arrays;
+
+public class Village {
+	private String nom;
+	private Chef chef;
+	private Gaulois[] villageois;
+	private int nbVillageois ;
+	
+	public Village(String nom,Chef chef, int NbVillageoisMaximum) {
+		this.nom = nom;
+		villageois=new Gaulois[NbVillageoisMaximum];
+		nbVillageois = 0;
+	}
+	
+	
+	public void setNbVillageois(int nbVillageois) {
+		this.nbVillageois = nbVillageois;
+	}
+
+
+	public void setChef(Chef chef) {
+		this.chef = chef;
+	}
+		
+	public String getNom() {
+		return nom;
+	}
+	
+	public Gaulois[] ajouterHabitant(Gaulois gaulois) {
+		villageois[nbVillageois]=gaulois;
+		setNbVillageois(nbVillageois + 1);
+		return villageois;
+	}
+	public Gaulois trouverHabitant(int numVillageois) {
+		return villageois[numVillageois];
+	}
+	@Override
+	public String toString() {
+		return "Village [nom=" + nom + ", chef=" + chef + ", villageois=" + Arrays.toString(villageois)
+				+ ", nbVillageois=" + nbVillageois + "]";
+	}
+	public static void main(String[] args) {
+		
+	}
+}

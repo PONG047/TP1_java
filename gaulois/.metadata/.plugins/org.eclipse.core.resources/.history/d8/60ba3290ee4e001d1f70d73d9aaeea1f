@@ -1,0 +1,78 @@
+package personnages;
+
+import java.util.Arrays;
+import java.util.Iterator;
+
+public class Village {
+	private String nom;
+	private Chef chef;
+	private Gaulois[] villageois;
+	private int nbVillageois ;
+	
+	public Village(String nom, int NbVillageoisMaximum) {
+		this.nom = nom;
+		villageois=new Gaulois[NbVillageoisMaximum];
+		nbVillageois = 0;
+	}
+	
+	
+	public void setNbVillageois(int nbVillageois) {
+		this.nbVillageois = nbVillageois;
+	}
+
+
+	public void setChef(Chef chef) {
+		this.chef = chef;
+	}
+		
+	public String getNom() {
+		return nom;
+	}
+	
+	public Gaulois[] ajouterHabitant(Gaulois gaulois) {
+		villageois[nbVillageois]=gaulois;
+		setNbVillageois(nbVillageois + 1);
+		return villageois;
+	}
+	
+	private void ajouterChef(Chef chef) {
+		setChef(chef);
+	}
+		
+	
+	public Gaulois trouverHabitant(int numVillageois) {
+		return villageois[numVillageois];
+	}
+	@Override
+	public String toString() {
+		return "Village [nom=" + nom + ", chef=" + chef + ", villageois=" + Arrays.toString(villageois)
+				+ ", nbVillageois=" + nbVillageois + "]";
+	}
+	
+	public void afficherVillageois(Village village){
+		System.out.println("Dans "+nom+" du chef "+chef.getNom()+" vivent les legendaires gaulois :");
+		for (int i = 0; i < nbVillageois; i++) {
+			Gaulois gaulois = village.trouverHabitant(i);
+			System.out.println("-"+gaulois.getNom());
+		}
+	}
+	
+	public static void main(String[] args) {
+		Village village = new Village("Village des irreductibles",30);
+		//System.out.println(village);
+		//Gaulois gaulois= village.trouverHabitant(30);
+		//on obtient l'exception out of range parceque les index du tableau villageois vont de 0 a 29
+		Chef abraracourcix = new Chef("abraracourcix", 6, village);
+		village.ajouterChef(abraracourcix);
+		Gaulois asterix = new Gaulois("asterix", 8);
+		village.ajouterHabitant(asterix);
+		Gaulois gaulois = village.trouverHabitant(1);
+		System.out.println(gaulois);
+		//System.out.println() renvoie la methode to string du village
+		village.afficherVillageois(village);
+	}
+
+
+	
+	
+}

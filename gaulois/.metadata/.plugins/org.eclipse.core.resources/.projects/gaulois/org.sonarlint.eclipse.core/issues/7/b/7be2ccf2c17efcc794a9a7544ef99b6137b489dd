@@ -1,0 +1,11 @@
+
+ƒ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ßğ¦8×ëº0H®RMINORZ
+CODE_SMELL
+s
+java:S18540"ARemove this useless assignment to local variable "abraracourcix".(¶Ûç{8ƒıº¼0HĞRMAJORZ
+CODE_SMELL
+n	java:S125."<This block of commented-out lines of code should be removed.(®¯û¡8ƒıº¼0HÑRMAJORZ
+CODE_SMELL
+d
+java:S14810"2Remove this unused "abraracourcix" local variable.(¶Ûç{8ƒıº¼0HÒRMINORZ
+CODE_SMELL

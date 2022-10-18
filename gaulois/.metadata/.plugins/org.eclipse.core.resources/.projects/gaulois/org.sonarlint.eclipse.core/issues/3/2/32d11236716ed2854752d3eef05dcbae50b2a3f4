@@ -1,0 +1,11 @@
+
+g
+java:S49739"<Strings and Boxed types should be compared using "equals()".(îşÆ²8›ÅÃêº0H?RMAJORZBUG
+h	java:S1061"9Replace this use of System.out or System.err by a logger.(õìÂıøÿÿÿÿHRMAJORZ
+CODE_SMELL
+‚	java:S117D"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù—Üü8÷·Êêº0HERMINORZ
+CODE_SMELL
+r	java:S125H"<This block of commented-out lines of code should be removed.(²İ–¡ûÿÿÿÿ8÷·Êêº0HFRMAJORZ
+CODE_SMELL
+D
+java:S2119"Save and re-use this "Random".(Ö•Ë]HRCRITICALZBUG
