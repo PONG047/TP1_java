@@ -1,0 +1,67 @@
+package personnages;
+
+public class Romain {
+	private String nom;
+	private int force;
+	private Equipement[] equipements;
+	private int nbEquipement = 0;
+	
+	public Romain(String nom, int force) {
+		assert force > 0;
+		this.nom = nom;
+		this.force = force;
+		equipements = new Equipement[2];
+		
+	}
+	
+	public String getNom() {
+		return nom;
+	}
+	
+	public void parler(String texte) {
+		System.out.println(prendreParole()+ "'" + texte + "'");
+	}
+
+	public String prendreParole() {
+		return "Le romain " + nom + " : ";
+	}
+	
+	public void recevoirCoup(int forceCoup) {
+		int forcedeb=force;
+		assert forcedeb>0;
+		force -= forceCoup;
+		assert forcedeb>force;
+		if (force > 0 ) {
+			parler("Aie");
+		} else {
+			parler("J'abandonne...");
+		}
+	}
+	public void sEquiper(Equipement equipement) {
+		switch(nbEquipement) {
+		case 2:
+			System.out.println("Le soldat "+nom+" est deja bien equipe !");
+		case 1:
+			//il a un equipement different
+			if (equipements[0].nom!=equipement.nom) {
+				equipements[nbEquipement]=equipement;
+				nbEquipement+=1;
+				System.out.println("Le soldat " + nom + " s'equipe avec un "+equipement.nom+".");	
+			}
+			else {
+				System.out.println("Le soldat "+ nom +" possede deja un "+equipement.nom+".");
+			}
+		case 0:
+			equipements[nbEquipement]=equipement;
+			nbEquipement+=1;
+			System.out.println("Le soldat "+nom+" s'equipe avec un"+equipement.nom);
+		}
+	}
+	public static void main(String[] args) {
+		Romain romain = new Romain("Roro",6);
+		romain.parler("SIUUUUUUUUUUUUUU");
+		romain.recevoirCoup(4);
+		System.out.println(Equipement.CASQUE);
+		System.out.println(Equipement.BOUCLIER);
+	}
+}
