@@ -1,11 +1,14 @@
 
-ƒ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ßğ¦8×ëº0H®RMINORZ
+k	java:S1065"9Replace this use of System.out or System.err by a logger.(ô«Õ—8ğ–˜Û¾0HöRMAJORZ
 CODE_SMELL
-s
-java:S18540"ARemove this useless assignment to local variable "abraracourcix".(¶Ûç{8ƒıº¼0HĞRMAJORZ
+p	java:S1068"9Replace this use of System.out or System.err by a logger.(€ñéõûÿÿÿÿ8ğ–˜Û¾0H÷RMAJORZ
 CODE_SMELL
-n	java:S125."<This block of commented-out lines of code should be removed.(®¯û¡8ƒıº¼0HÑRMAJORZ
+s	java:S125G"<This block of commented-out lines of code should be removed.(Ú‹™¿øÿÿÿÿ8¼·¸Û¾0H®RMAJORZ
 CODE_SMELL
-d
-java:S14810"2Remove this unused "abraracourcix" local variable.(¶Ûç{8ƒıº¼0HÒRMINORZ
+s	java:S125>"<This block of commented-out lines of code should be removed.(™ß¾ıÿÿÿÿ8Îÿ¯Û¾0H©RMAJORZ
+CODE_SMELL
+b
+java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8Ä©Û¾0H–RMINORZ
+CODE_SMELL
+ƒ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ßğ¦8×ëº0HõRMINORZ
 CODE_SMELL

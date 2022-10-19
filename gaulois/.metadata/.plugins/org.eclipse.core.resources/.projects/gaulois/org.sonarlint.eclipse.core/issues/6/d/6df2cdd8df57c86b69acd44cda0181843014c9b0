@@ -1,3 +1,26 @@
 
-h	java:S106"9Replace this use of System.out or System.err by a logger.(õìÂıøÿÿÿÿHRMAJORZ
+p	java:S106D"9Replace this use of System.out or System.err by a logger.(ª¹¥¥şÿÿÿÿ8ğ›òÜ¾0HòRMAJORZ
+CODE_SMELL
+k	java:S1062"9Replace this use of System.out or System.err by a logger.(†Òí8€˜ÖÜ¾0HóRMAJORZ
+CODE_SMELL
+p	java:S106E"9Replace this use of System.out or System.err by a logger.(£†âÈûÿÿÿÿ8„çæÛ¾0HôRMAJORZ
+CODE_SMELL
+m
+java:S4973/"<Strings and Boxed types should be compared using "equals()".(…íùªøÿÿÿÿ8ğ›òÜ¾0HõRMAJORZBUG
+`
+java:S4274
+"(Replace this assert with a proper check.(ìí§Øüÿÿÿÿ8ÙğÌÛ¾0HúRMAJORZ
+CODE_SMELL
+
+java:S1192+"KDefine a constant instead of duplicating this literal "Le soldat " 4 times.(èÆÌ8ğ›òÜ¾0HûRCRITICALZ
+CODE_SMELL
+p	java:S1066"9Replace this use of System.out or System.err by a logger.(áàåÊÿÿÿÿÿ8€˜ÖÜ¾0H€RMAJORZ
+CODE_SMELL
+W	java:S131)""Add a default case to this switch.(£·ïİ8€˜ÖÜ¾0HRCRITICALZ
+CODE_SMELL
+i	java:S106"9Replace this use of System.out or System.err by a logger.(õìÂıøÿÿÿÿH‚RMAJORZ
+CODE_SMELL
+k	java:S106<"9Replace this use of System.out or System.err by a logger.(Üÿ¤ß8ğ›òÜ¾0HƒRMAJORZ
+CODE_SMELL
+k	java:S106+"9Replace this use of System.out or System.err by a logger.(èÆÌ8ƒçæÛ¾0H„RMAJORZ
 CODE_SMELL
